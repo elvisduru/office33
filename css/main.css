@@ -75,6 +75,7 @@ a {
     z-index: -1;
     color: white;
     position: relative;
+    z-index: 0;
 }
 
 #hero:before {
