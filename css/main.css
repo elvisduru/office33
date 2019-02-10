@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+* {
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -53,8 +57,96 @@ html, body {
     width: 100vw;
 }
 
+a {
+    text-decoration: unset;
+    color: unset;
+}
+
 #hero {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+    padding: 30px;
+    background-image: url(../images/image1.jpg);
+    background-size: cover;
+    background-position: 50%;
+    z-index: -1;
+    color: white;
+    position: relative;
+}
+
+#hero:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+#hero nav ul, #hero nav div, #hero nav {
+    display: flex;
+    align-items: center;
+}
+
+#hero nav {
+    width: 100%;
+    justify-content: space-between;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+    padding: 10px 70px;
+}
+
+.logo {
+    margin-right: 40px;
+}
+
+.logo img {
+    width: 100px;
+
+}
+
+.right-nav li {
+    margin-right: 30px;
+}
+
+.right-nav a:last-child {
+    margin-left: 30px;
+}
+
+.hero-center {
+    text-align: center;
+    width: 50%;
+    height: 30px;
+    font-size: 2em;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+#hero .scroll-down {
+    height: 30px;
+    position: relative;
+}
+
+#hero .scroll-down i {
+    position: absolute;
+    animation-name: scrollDown;
+    animation-direction: alternate;
+    animation-duration: 900ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes scrollDown {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 20px;
+    }
 }
