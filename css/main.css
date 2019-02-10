@@ -33,7 +33,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+    line-height: 1;
+    font-family: 'Montserrat', sans-serif;    
 }
 ol, ul {
 	list-style: none;
@@ -51,7 +52,6 @@ table {
 	border-spacing: 0;
 }
 
-/* HERO SECTION */
 
 html, body {
     width: 100vw;
@@ -61,6 +61,18 @@ a {
     text-decoration: unset;
     color: unset;
 }
+
+.button {
+    background-color: #e62029;
+    color: white;
+    font-size: 13px;
+    line-height: 13px;
+    padding: 12px 25px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+/* HERO SECTION */
 
 #hero {
     display: flex;
@@ -124,7 +136,6 @@ a {
     width: 50%;
     height: 30px;
     font-size: 2em;
-    font-family: 'Montserrat', sans-serif;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
     font-weight: bold;
 }
@@ -150,3 +161,84 @@ a {
         top: 20px;
     }
 }
+
+/* END HERO SECTION */
+
+/* FEATURES SECTION */
+
+#features {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#features > h2 {
+    font-weight: bold;
+    margin-bottom: 50px;
+    font-size: 1.8em;
+    text-transform: capitalize;
+}
+
+#features > h2 span {
+    color: rgba(230, 32, 41, 1);
+}
+
+.feature-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+    line-height: 1.7;
+    align-items: center;
+}
+
+.feature-wrapper .learn-more {
+    min-width: 400px;
+    text-align: left;
+}
+
+.feature-wrapper .learn-more h2 {
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.feature-wrapper .learn-more p {
+    margin-bottom: 30px;
+}
+
+.feature-wrapper .learn-more a:hover {
+    background-color: transparent;
+    border: 1px solid rgba(230, 32, 41, 0.8);
+    color: rgba(230, 32, 41, 1);
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.features .feature {
+    min-width: 23%;
+    max-width: 23%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.features .feature:hover {
+    border: 1px solid rgba(230, 32, 41, 0.8);
+}
+
+.features .feature i {
+    margin-bottom: 20px;
+    color: rgba(230, 32, 41, 0.8);
+}
+
+.features .feature p {
+    font-size: 0.9em;
+}
+
+/* END FEATURES SECTION */
