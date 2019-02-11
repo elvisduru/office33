@@ -95,10 +95,9 @@ a {
     background-image: url(../images/image1.jpg);
     background-size: cover;
     background-position: 50%;
-    z-index: -1;
     color: white;
     position: relative;
-    z-index: 0;
+    z-index: 1;
 }
 
 #hero:before {
