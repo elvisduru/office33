@@ -707,11 +707,11 @@ PLAN PAGE
 WHY-US PAGE
 *********************************************************************************************************************** */
 
-.whyus .features{
+.whyus .features, .mission .features {
     justify-content: space-around;
 }
 
-.whyus .features .feature {
+.whyus .features .feature, .mission .features .feature {
     min-width: 45%;
     max-width: 45%;
 }
@@ -720,15 +720,26 @@ WHY-US PAGE
     margin-top: -100px;
 }
 
+#hero.hero-mission {
+    height: 60vh;
+}
+
+.mission .features .feature {
+    min-width: 70%;
+    max-width: 70%;
+}
+
+.mission .features .feature p {
+    font-size: 1.2em;
+    text-align: left;
+    margin-bottom: 14px;
+}
+
 @media screen and (max-width: 768px) {
-    .whyus .features .feature {
+    .whyus .features .feature, .mission .features .feature p, .mission .features .feature {
         min-width: 100%;
         max-width: 100%;
         margin-right: 0;
     }
     
-}
-
-.whyus .features .feature p {
-    font-size: 1em;
 }
