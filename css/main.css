@@ -35,6 +35,7 @@ footer, header, hgroup, menu, nav, section {
 body {
     line-height: 1;
     font-family: 'Montserrat', sans-serif;    
+    overflow-x: hidden;
 }
 ol, ul {
 	list-style: none;
@@ -174,7 +175,7 @@ a {
     margin-top: 60px;
 }
 
-#features > h2 {
+#features > h2, #sub-footer > h2 {
     font-weight: bold;
     margin-bottom: 50px;
     font-size: 1.8em;
@@ -242,3 +243,130 @@ a {
 }
 
 /* END FEATURES SECTION */
+
+/* SUB-FOOTER SECTION */
+
+#sub-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 70px 135px;
+    background-color: #fd2b2b;
+    color: white;
+}
+
+#sub-footer > h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+#sub-footer .lead {
+    margin-bottom: 40px;
+    opacity: 0.8;
+}
+
+#sub-footer form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#sub-footer form input {
+    flex: 1 0 auto;
+    margin-right: 15px;
+    outline: none;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    font-size: 1em;
+    color: rgb(230, 32, 41);
+}
+
+#sub-footer form input:focus {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+button.button {
+    color: white;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+    border: 1px solid transparent;
+    outline: none;
+}
+
+button.button:hover {
+    color: color;
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+/* END SUB-FOOTER SECTION */
+
+/* FOOTER SECTION */
+
+footer .logo {
+    margin-bottom: 50px;
+    width: 100px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 180px;
+    background: black;
+    color: white;
+}
+
+footer .left {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .left .socials {
+    margin-bottom: 40px;
+    font-size: 1.3em;
+}
+
+footer .left .socials i {
+    margin-right: 14px;
+    cursor: pointer;
+    color: white;
+}
+
+footer .left .socials i:hover {
+    color: rgb(230, 32, 41);
+}
+
+footer .left .copyright {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer .left .copyright a {
+    text-decoration: underline;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+footer .right h3 {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+footer .right > p {
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+footer .right .contacts {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9em;
+    line-height: 1.4;
+}
+
+/* END FOOTER SECTION */
