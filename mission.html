@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Office 33</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Staatliches" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!-- Start Hero Section -->
+    <section id="hero" class="hero-plans">
+        <nav>
+            <a href="#" class="logo">
+                <img src="./images/logo.png" alt="Office33">
+            </a>
+            <div class="right-nav">
+                <ul>
+                    <li><a href="./plans.html">PLANS</a></li>
+                    <li><a href="./whyus.html">WHY OFFICE33</a></li>
+                    <li class="active"><a href="#">MISSION</a></li>
+                    <li><a href="#">EVENTS</a></li>
+                    <i class="fas fa-times mobile-only close-nav"></i>
+                </ul>
+                <a href="#">FAQ</a>
+                <a href="#"><i class="fas fa-phone-volume"></i> &nbsp;+234 908 163 5000</a>
+            </div>
+            <i class="fas fa-bars mobile-only open-nav"></i>
+        </nav>
+        <div class="hero-center whyus">
+            <span id="intro-heading"></span>
+        </div>
+        <div class="scroll-down">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- End Hero Section -->
+
+    <!-- Start Features Section -->
+
+    <section id="features" class="whyus">
+        <h2>Not Convinced?</h1>
+        <div class="feature-wrapper">
+            <div class="features">
+                <div class="feature">
+                    <p>We provide the right and professional office space solutions at low cost, whether you need a conference room for an hour, a hot/fixed desk for a week, an office space for a month, or a virtual address for a year, We provide all of these.</p>
+                </div>
+                <div class="feature">
+                    <p>Office 33 helps you eliminate the burden of property management, agent fees, service charge and helps you save set up cost on office equipment, furniture, security and staffing.</p>
+                </div>
+                <div class="feature">
+                    <p>We are currently the home of top companies in Lagos which includes Quicky dispatch international limited, Strugz’ safe haven, Dacheo media and a host of others.</p>
+                </div>
+                <div class="feature">
+                    <p>We offer services to a robust community of professionals like lawyers, accountants, human resource persons, media persons, information technology consultants and help them meet client’s expectations.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- End Features Section -->
+
+    <!-- Sub-Footer Section -->
+
+    <section id="sub-footer">
+        <h3>Improve Your Business Today</h3>
+        <p class="lead">Subscribe to receive offers, updates and press releases from the Office33 team</p>
+        <form action="#" >
+            <input type="text" placeholder="Your Name">
+            <input type="email" placeholder="Your Email">
+            <input type="text" placeholder="Your Company">
+            <button class="button">Subscribe</button>
+        </form>
+    </section>
+
+    <!-- End Sub-Footer Section -->
+
+    <!-- Footer -->
+    
+    <footer>
+        <div class="left">
+            <img class="logo" src="./images/logo.png" alt="logo">
+            <div class="socials">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-linkedin-in"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+            <p class="copyright">
+                &copy;Office33, 2019. All Rights Reserved. <a href="#">Website Terms</a>
+            </p>
+        </div>
+        <div class="right">
+            <h3>Office33 Headquaters</h3>
+            <p>
+                12D Wole Ariyo Street, <br>Admiralty Way, Lekki Phase 1
+            </p>
+            <div class="contacts">
+                <p>+234 123 456 7890</p>
+                <p>+234 123 456 7890</p>
+                <p>+234 123 456 7890</p>
+                <p>+234 123 456 7890</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        var options4 = {
+            strings: [
+                `OUR MISSION`
+            ],
+            typeSpeed: 40,
+            backSpeed: 0,
+            loop: false,
+        }
+
+        var planTyped = new Typed('#intro-heading', options4)
+
+        var introText = document.querySelector('#hero.hero-plans .hero-center p');
+    </script>
+</body>
+</html>

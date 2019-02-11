@@ -18,9 +18,9 @@
             </a>
             <div class="right-nav">
                 <ul>
-                    <li><a href="#">PLANS</a></li>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">MISSION</a></li>
+                    <li><a href="./plans.html">PLANS</a></li>
+                    <li><a href="./whyus.html">WHY OFFICE33</a></li>
+                    <li><a href="./mission.html">MISSION</a></li>
                     <li><a href="#">EVENTS</a></li>
                     <i class="fas fa-times mobile-only close-nav"></i>
                 </ul>
@@ -131,5 +131,20 @@
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script src="./js/main.js"></script>
+    <script>
+        var options = {
+            strings: [
+                `We offer creative working environments with unique entrepreneurial spirit.^1000\n`,
+                `We provide tenant experience for agile workspaces.^1000\n`,
+                `Meet.^500\n Collaborate.^500\n Grow.`,
+            ],
+            typeSpeed: 40,
+            backSpeed: 0,
+            smartBackspace: true,
+            loop: true
+        }
+
+        var typed = new Typed('#hero-text', options);
+    </script>
 </body>
 </html>

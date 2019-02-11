@@ -73,6 +73,12 @@ a {
     border-radius: 5px;
 }
 
+.button.button-sm {
+    font-size: 12px;
+    line-height: 12px;
+    padding: 8px 15px;
+}
+
 .mobile-only {
     display: none;
 }
@@ -132,7 +138,7 @@ a {
     margin-right: 30px;
 }
 
-.right-nav li:hover {
+.right-nav li:hover, .right-nav li.active {
     color: rgb(230, 32, 41)
 }
 
@@ -527,3 +533,202 @@ footer .right .contacts {
 }
 
 /* END FOOTER SECTION */
+
+/* **********************************************************************************************************************
+PLAN PAGE
+*********************************************************************************************************************** */
+
+/* START HERO */
+
+#hero.hero-plans {
+    height: 70vh;
+}
+
+#hero.hero-plans .hero-center p {
+    font-size: 0.7em;
+    font-weight: normal;
+    margin-top: 20px;
+    line-height: 1.5;
+    opacity: 0;
+    transition: opacity 0.4s 0.3s ease-in;
+}
+
+#hero.hero-plans .hero-center p.show {
+    opacity: 1;
+}
+
+/* END HERO */
+
+
+/* START FEATURES */
+
+/* #features.plans .feature-wrapper .features {
+    width: 100%;
+} */
+
+.hover-table-layout {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+       -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    margin:0 auto;
+    width: 100%;
+  }
+  .listing-item {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 20px;
+      margin-bottom:30px;
+      /* float: left; */
+      min-width: 300px;
+      max-width: 300px;
+      background: #fff;
+      border-radius:10px;
+      z-index:0;
+      cursor:pointer;
+      -webkit-transition: all 0.3s ease;
+      -moz-transition: all 0.3s ease;
+      transition: all 0.3s ease;
+          -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+      -moz-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+      box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.10);
+  
+  }
+  .listing-item:hover,  .listing-item.active{
+      -webkit-transform: scale(1.03);
+      -moz-transform: scale(1.03);
+      transform: scale(1.03);
+          -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+      z-index:2;
+  
+  }
+  .listing-item .listing{
+      padding:20px;
+      position:relative;
+      margin-bottom: auto;
+  }
+
+  .listing-item a {
+      margin-top: 20px;
+  }
+  .listing-item .listing:before{
+      content:"";
+      position:absolute;
+      top:-15px;
+      left:-o-calc(50% - 15px);
+      left:-moz-calc(50% - 15px);
+      left:-webkit-calc(50% - 15px);
+      left:calc(50% - 15px);
+      border-bottom:20px solid #fff;
+      border-left:20px solid transparent;
+      border-right:20px solid transparent;
+  }
+      figure.image img {
+          width:100%;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  }
+  figure.image {
+      position: relative;
+      margin: 0;
+      padding: 0;
+  }
+  figure.image figcaption {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      text-align: center;
+      bottom: 4px;
+      background: rgba(0,0,0,0.6);
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+  
+  }
+  figcaption .caption{
+      position:relative;
+      top:50%;
+      -moz-transform:translateY(-50%);
+      -webkit-transform:translateY(-50%);
+      transform:translateY(-50%);
+  
+  }
+  figcaption h1{
+      color:white;
+      font-weight:bold;
+      font-size:17px;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+  }
+  figcaption p{
+    color:white;
+    font-size:14px;
+  }
+  .listing h4 {
+     
+      font-size: 13px;
+      text-align: center;
+      padding: 5px 10px;
+      font-weight: bold;
+  }
+  .listing h4:not(:last-child){
+     border-bottom: 1px solid #ccc;
+  }
+  .listing-item:hover figure.image figcaption{
+         background: rgba(195, 39, 43, 0.6);
+  }
+  @media only screen and (max-width:760px){
+      .hover-table-layout {
+          flex-direction: column;
+          align-items: center;
+      }
+      .listing-item {
+     display: block;
+      }
+  }
+  @media only screen and (min-width:1024px){
+      .hover-table-layout{
+          padding: 0 200px;
+      }
+  }
+
+/* END FEATURES */
+
+/* **********************************************************************************************************************
+WHY-US PAGE
+*********************************************************************************************************************** */
+
+.whyus .features{
+    justify-content: space-around;
+}
+
+.whyus .features .feature {
+    min-width: 45%;
+    max-width: 45%;
+}
+
+.whyus.hero-center {
+    margin-top: -100px;
+}
+
+@media screen and (max-width: 768px) {
+    .whyus .features .feature {
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+    
+}
+
+.whyus .features .feature p {
+    font-size: 1em;
+}
