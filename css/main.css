@@ -1360,11 +1360,13 @@ WHY-US PAGE
   visibility: hidden;
 }
 
-.fix-btn {
-  position: fixed;
-  top: 0px;
-  width: 100%;
-  border-radius: 0 0 10px 10px;
-  background-color: rgb(230, 32, 41);
-  color: white;
+@media screen and (max-width: 768px) {
+  .fix-btn {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+    background-color: rgb(230, 32, 41);
+    color: white;
+  }
 }
