@@ -79,6 +79,23 @@ a {
     padding: 8px 15px;
 }
 
+.callout-btn {
+  background-color: transparent;
+  color: white;
+  font-size: 13px;
+  line-height: 13px;
+  padding: 12px 25px;
+  font-weight: 700;
+  border-radius: 5px;
+  border: 2px solid white;
+  cursor: pointer;
+} 
+
+.callout-btn:hover {
+  border: 2px solid #e62029;
+  color: #e62029;
+}
+
 .mobile-only {
     display: none;
 }
@@ -192,7 +209,7 @@ a {
     }
 
     #hero nav .right-nav {
-        display: none;
+        display: flex;
         position: fixed;
         width: 100vw;
         top: 0;
@@ -208,6 +225,7 @@ a {
         opacity: 0;
         transform: translateX(100vw);
         transition: all 0.4s;
+        visibility: hidden;
     }
 
     #hero nav .right-nav .close-nav {
@@ -240,7 +258,7 @@ a {
     }
 
     #hero nav .right-nav.slide-in {
-        display: flex;
+        visibility: visible;
         opacity: 1;
         transform: translateX(0vw);
     }
@@ -254,7 +272,7 @@ a {
 #features {
     display: flex;
     flex-direction: column;
-    padding: 40px 60px;
+    padding: 40px;
     text-align: center;
     margin-top: 60px;
 }
@@ -539,9 +557,9 @@ PLAN PAGE
 
 /* START HERO */
 
-#hero.hero-plans {
-    height: 70vh;
-}
+/*#hero.hero-plans {
+    height: 100vh;
+}*/
 
 #hero.hero-plans .hero-center p {
     font-size: 0.7em;
@@ -587,8 +605,8 @@ PLAN PAGE
      padding-bottom: 20px;
       margin-bottom:30px;
       /* float: left; */
-      min-width: 300px;
-      max-width: 300px;
+      min-width: 280px;
+      max-width: 280px;
       background: #fff;
       border-radius:10px;
       z-index:0;
@@ -648,7 +666,7 @@ PLAN PAGE
       width: 100%;
       text-align: center;
       bottom: 4px;
-      background: rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.9);
       border-top-left-radius: 10px;
       border-top-right-radius: 10px;
   
@@ -715,12 +733,10 @@ WHY-US PAGE
     max-width: 45%;
 }
 
-.whyus.hero-center {
-    margin-top: -100px;
-}
-
-#hero.hero-mission {
-    height: 60vh;
+@media screen and (min-width: 768px) {
+  .whyus.hero-center {
+      margin-bottom: 90px;
+  }
 }
 
 .mission .features .feature {
@@ -1192,3 +1208,155 @@ WHY-US PAGE
   #features.faq .features {
       width: 100%;
   }
+
+
+#schedule-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 2000;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 200px;
+  transition: all 0.4s !important;
+}
+
+#schedule-form > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 70px;
+  border-radius: 30px;
+  position: relative;
+}
+
+#schedule-form > div > h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#schedule-form > div > p {
+  margin-bottom: 30px;
+}
+
+#schedule-form > div > form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#schedule-form > div > form input, #schedule-form > div > form textarea {
+  margin-bottom: 30px;
+  font-size: 16px;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  transition: border-bottom 0.4s;
+}
+
+#schedule-form > div > form textarea {
+  width: 100%;
+}
+
+#schedule-form > div > form input {
+  min-width: 48%;
+  max-width: 48%;
+}
+
+#schedule-form > div > form input:focus {
+  border-bottom: 2px solid #e62029;
+}
+
+#schedule-form > div > form button {
+  margin: 20px auto 0;
+  padding: 13px 70px;
+  background-color: transparent;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#schedule-form > div > form button:hover {
+  border: 2px solid #e62029;
+}
+
+#schedule-form > div i.fa-times {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 30px;
+  padding: 10px 15px;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #schedule-form > div > form input {
+    min-width: 100%;
+    max-width: 100%;
+    margin-bottom: 18px;
+    border-radius: 8px;
+  }
+
+  #schedule-form > div > form textarea {
+    border-radius: 8px;
+  }
+
+  #schedule-form {
+    padding: 20px;
+  }
+
+  #schedule-form > div {
+    padding: 30px;
+  }
+
+  #schedule-form > div > h1 {
+    font-size: 2.3em;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  #schedule-form > div > p {
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+
+  #schedule-form > div > form button {
+    width: 100%;
+  }
+
+  #schedule-form > div i.fa-times {
+    font-size: 20px;
+    padding: 7px 10px;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+
+  #schedule-form > div > form input, #schedule-form > div > form textarea {
+    margin-bottom: 15px;
+  }
+
+}
+
+#schedule-form.hide-form {
+  /*display: none;*/
+  opacity: 0;
+  visibility: hidden;
+}
