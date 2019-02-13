@@ -11,3 +11,17 @@ openNavBtn.addEventListener("click", function() {
 closeNavBtn.addEventListener("click", function() {
     mobileNav.classList.remove("slide-in");
 })
+
+
+// Enquiry form
+var trigger = document.querySelector(".callout-btn");
+var closeForm = document.querySelector("#schedule-form .fa-times");
+var form = document.querySelector("#schedule-form");
+
+trigger.addEventListener("click", function() {
+	form.classList.remove("hide-form");
+});
+
+closeForm.addEventListener("click", function() {
+	form.classList.add("hide-form");
+})
