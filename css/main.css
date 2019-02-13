@@ -1326,12 +1326,14 @@ WHY-US PAGE
   #schedule-form > div > h1 {
     font-size: 2.3em;
     text-align: center;
+    margin-bottom: 15px;
   }
 
   #schedule-form > div > p {
     font-size: 0.9em;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 18px;
   }
 
   #schedule-form > div > form button {
@@ -1346,6 +1348,11 @@ WHY-US PAGE
     top: 15px;
     right: 15px;
   }
+
+  #schedule-form > div > form input, #schedule-form > div > form textarea {
+    margin-bottom: 15px;
+  }
+
 }
 
 #schedule-form.hide-form {
