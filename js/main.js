@@ -24,4 +24,12 @@ trigger.addEventListener("click", function() {
 
 closeForm.addEventListener("click", function() {
 	form.classList.add("hide-form");
-})
+});
+
+window.addEventListener("scroll", function() {
+    if (window.scrollY > 399) {
+        trigger.classList.add("fix-btn");
+    } else {
+        trigger.classList.remove("fix-btn");
+    }
+});
