@@ -1370,3 +1370,9 @@ WHY-US PAGE
     color: white;
   }
 }
+
+.g-recaptcha {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

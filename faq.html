@@ -146,12 +146,13 @@
                 <p class="lead">
                     Sign up below to be notified about pricing and availability.
                 </p>
-                <form action="#">
-                    <input type="text" placeholder="Name *" required>
-                    <input type="email" placeholder="Email *" required>
-                    <input type="tel" placeholder="Phone number *" required>
-                    <input type="number" placeholder="Number of desk *" required>
-                    <textarea placeholder="Message *" required></textarea>
+                <form accept-charset="UTF-8" action="https://usebasin.com/f/84f0c3c2adeb" method="POST">
+                    <input type="text" placeholder="Name *" required name="name">
+                    <input type="email" placeholder="Email *" required name="email" id="email">
+                    <input type="tel" placeholder="Phone number *" required name="phone">
+                    <input type="number" placeholder="Number of desk *" required name="noOfDesk">
+                    <textarea placeholder="Message *" required name="message"></textarea>
+                    <div class="g-recaptcha" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy"></div>
                     <button type="submit">SEND</button>
                 </form>
             </div>
@@ -304,5 +305,6 @@
 	}
 });
     </script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 </html>
