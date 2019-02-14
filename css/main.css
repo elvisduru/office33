@@ -265,6 +265,12 @@ a {
 
 }
 
+@media screen and (max-width: 768px) and (orientation:landscape) {
+  #hero nav .right-nav .close-nav {
+      right: 30px;
+  }
+}
+
 /* END HERO SECTION */
 
 /* FEATURES SECTION */
@@ -560,16 +566,21 @@ PLAN PAGE
 
 /* START HERO */
 
-/*#hero.hero-plans {
-    height: 100vh;
-}*/
+#hero.hero-plans {
+    height: 70vh;
+}
+
+#hero.hero-plans .hero-center {
+  margin-top: -50px;
+  margin-bottom: 20px;
+}
 
 #hero.hero-plans .hero-center p {
     font-size: 0.7em;
     font-weight: normal;
     margin-top: 20px;
     line-height: 1.5;
-    opacity: 0;
+    opacity: 1;
     transition: opacity 0.4s 0.3s ease-in;
 }
 
@@ -1236,7 +1247,8 @@ WHY-US PAGE
   background-color: white;
   padding: 70px;
   border-radius: 30px;
-  position: relative;
+    overflow: auto;
+    position: relative;
 }
 
 #schedule-form > div > h1 {
@@ -1254,7 +1266,8 @@ WHY-US PAGE
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+    overflow-y: auto;
+    justify-content: space-between;
 }
 
 #schedule-form > div > form input, #schedule-form > div > form textarea {
@@ -1379,7 +1392,7 @@ WHY-US PAGE
   }
 }
 
-.g-recaptcha {
+div.g-recaptcha {
   width: 100%;
   display: flex;
   justify-content: center;
