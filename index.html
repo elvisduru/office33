@@ -88,11 +88,11 @@
     <section id="sub-footer">
         <h3>Improve Your Business Today</h3>
         <p class="lead">Subscribe to receive offers, updates and press releases from the Office33 team</p>
-        <form accept-charset="UTF-8" action="https://usebasin.com/f/ccbe75a2fd9c" method="POST">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Your Email">
-            <input type="text" placeholder="Your Company">
-            <button class="button">Subscribe</button>
+        <form id="invisible-recaptcha-form" accept-charset="UTF-8" action="https://usebasin.com/f/ccbe75a2fd9c" method="POST">
+            <input type="text" placeholder="Your Name" name="name" required>
+            <input type="email" placeholder="Your Email" name="email" id="email" required>
+            <input type="text" placeholder="Your Company" name="company">
+            <button class="g-recaptcha button" data-sitekey="6Lew3SMUAAAAAJ82QoS7gqOTkRI_dhYrFy1f7Sqy" data-callback='onSubmit' data-badge="inline">Subscribe</button>
         </form>
     </section>
 

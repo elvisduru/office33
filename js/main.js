@@ -32,3 +32,7 @@ window.addEventListener("scroll", function() {
         trigger.classList.remove("fix-btn");
     }
 });
+
+function onSubmit(token) {
+    document.getElementById("invisible-recaptcha-form").submit();
+}
