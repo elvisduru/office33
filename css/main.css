@@ -298,7 +298,7 @@ a {
 
 .feature-wrapper .learn-more {
     min-width: 400px;
-    text-align: left;
+    text-align: center;
 }
 
 .feature-wrapper .learn-more h2 {
@@ -388,6 +388,9 @@ a {
         max-width: 100%;
     }
     
+    .feature-wrapper .learn-more {
+        order: 1;
+    }
 }
 
 /* END FEATURES SECTION */
