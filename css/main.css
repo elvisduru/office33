@@ -1398,7 +1398,6 @@ div.g-recaptcha {
   justify-content: center;
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape) {
-  
-
+.grecaptcha-badge {
+  display: none;
 }
