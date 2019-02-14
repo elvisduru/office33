@@ -1324,13 +1324,13 @@ WHY-US PAGE
   }
 
   #schedule-form > div > h1 {
-    font-size: 2.3em;
+    font-size: 2em;
     text-align: center;
     margin-bottom: 15px;
   }
 
   #schedule-form > div > p {
-    font-size: 0.9em;
+    font-size: 0.7em;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 18px;
@@ -1372,7 +1372,7 @@ WHY-US PAGE
 
   #schedule-form > div i.fa-times {
     top: 50px;
-    right: 30px;
+    right: 15px;
   }
 }
 
