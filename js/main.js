@@ -12,7 +12,6 @@ closeNavBtn.addEventListener("click", function() {
     mobileNav.classList.remove("slide-in");
 })
 
-
 // Enquiry form
 var trigger = document.querySelector(".callout-btn");
 var closeForm = document.querySelector("#schedule-form .fa-times");
