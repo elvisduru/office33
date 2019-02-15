@@ -89,6 +89,7 @@ a {
   border-radius: 5px;
   border: 2px solid white;
   cursor: pointer;
+  margin-top: 30px;
 } 
 
 .callout-btn:hover {
@@ -567,11 +568,10 @@ PLAN PAGE
 /* START HERO */
 
 #hero.hero-plans {
-    height: 70vh;
+    height: 60vh;
 }
 
 #hero.hero-plans .hero-center {
-  margin-top: -50px;
   margin-bottom: 20px;
 }
 
@@ -751,6 +751,10 @@ WHY-US PAGE
   .whyus.hero-center {
       margin-bottom: 90px;
   }
+
+  #hero.hero-plans {
+      height: 70vh;
+  }
 }
 
 .mission .features .feature {
@@ -764,11 +768,19 @@ WHY-US PAGE
     margin-bottom: 14px;
 }
 
+#hero.hero-whyus {
+  height: 70vh;
+}
+
 @media screen and (max-width: 768px) {
     .whyus .features .feature, .mission .features .feature p, .mission .features .feature {
         min-width: 100%;
         max-width: 100%;
         margin-right: 0;
+    }
+
+    .hero-whyus > .callout-btn {
+      margin-top: 100px;
     }
 }
 
@@ -1400,4 +1412,8 @@ div.g-recaptcha {
 
 .grecaptcha-badge {
   display: none;
+}
+
+#hero.hero-mission {
+  height: 45vh;
 }
